@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  state = {
+    mercado: [
+      {
+        produto:'Arroz',
+        valor: 20,
+      },{
+        produto:'Feijão',
+        valor: 10,
+      },{
+        produto:'Macarrao',
+        valor: 8,
+      },{
+        produto:'Açucar',
+        valor: 12,
+      },{
+        produto:'Sal',
+        valor: 9,
+      },{
+        produto:'Óleo',
+        valor: 7,
+      }
+    ]
+  }
+  render(){
+    return(
+      <div>
+        <div className='mercado'>
+          <div className='mercadoTitle'>
+            <h1>Mercado</h1>
+          </div>
+            {this.state.mercado.map ((item) => (
+              <div>
+                <h2>{item.produto}</h2>
+                <p>R$: {item.valor},00</p>
+              </div>
+            ))}
+        </div>
+      </div>
+    )
+  }
 }
-
-export default App;
+export default App
