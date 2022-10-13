@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Map/static/css/main.345b06c2.css",
+    "main.js": "/Map/static/js/main.52e8cd92.js",
+    "static/js/787.57d4d9af.chunk.js": "/Map/static/js/787.57d4d9af.chunk.js",
+    "static/media/mercado-background.jpg": "/Map/static/media/mercado-background.8cb0facf68e67d9e84aa.jpg",
+    "index.html": "/Map/index.html",
+    "main.345b06c2.css.map": "/Map/static/css/main.345b06c2.css.map",
+    "main.52e8cd92.js.map": "/Map/static/js/main.52e8cd92.js.map",
+    "787.57d4d9af.chunk.js.map": "/Map/static/js/787.57d4d9af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.345b06c2.css",
+    "static/js/main.52e8cd92.js"
+  ]
+}
