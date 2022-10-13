@@ -27,19 +27,21 @@ class App extends Component{
   }
   render(){
     return(
-      <div>
+      <main>
         <div className='mercado'>
           <div className='mercadoTitle'>
             <h1>Mercado</h1>
           </div>
-            {this.state.mercado.map ((item) => (
-              <div>
-                <h2>{item.produto}</h2>
-                <p>R$: {item.valor},00</p>
-              </div>
-            ))}
+            <div className='CardProduct'>
+              {this.state.mercado.map ((item) => (
+                <div className='Card'>
+                  <h2>{item.produto}</h2>
+                  <p>R$: {item.valor},00</p>
+                </div>
+              ))}
+            </div>
         </div>
-      </div>
+      </main>
     )
   }
 }
